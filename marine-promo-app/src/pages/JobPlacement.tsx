@@ -100,7 +100,7 @@ export default function JobPlacementPage() {
 
       {/* Process Overview */}
       <motion.section
-        variants={staggerContainer}
+        variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
@@ -276,7 +276,7 @@ export default function JobPlacementPage() {
       <section className="py-16 bg-gradient-to-r from-blue-800 to-blue-600 text-white">
         <div className="container mx-auto px-4">
           <motion.div
-            variants={staggerContainer}
+            variants={staggerContainer()}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}

@@ -2,7 +2,7 @@ import "../assets/styles/testimonialsSection.css"
 import React, { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { staggerContainer, fadeIn, textVariant } from '../utils/motion';
-import { FaQuoteLeft, FaShip, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaQuoteLeft, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 import DEFAULT_IMAGE from '../assets/images/default.png';
 
@@ -63,7 +63,7 @@ export default function Testimonials() {
 
   return (
     <motion.section
-      variants={staggerContainer}
+      variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}

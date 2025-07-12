@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { NavLink, useLocation } from 'react-router-dom';
-import { FaBars, FaTimes, FaShip, FaUserTie, FaPhoneAlt, FaSearch } from 'react-icons/fa';
+import { FaBars, FaUserTie, FaPhoneAlt, FaSearch } from 'react-icons/fa';
 import { MdOutlineClose } from 'react-icons/md';
 import logo from '../assets/images/logo.svg';
 

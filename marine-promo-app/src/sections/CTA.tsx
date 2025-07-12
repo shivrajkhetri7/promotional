@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaPhone, FaEnvelope, FaArrowRight, FaTimes } from 'react-icons/fa';
+import { FaArrowRight, FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
 import '../assets/styles/cats.css';
 

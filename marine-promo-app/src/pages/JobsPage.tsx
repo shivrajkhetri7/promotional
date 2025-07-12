@@ -1,11 +1,10 @@
 import '../assets/styles/jobs-components.css'
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
+import { staggerContainer, textVariant } from '../utils/motion';
 import JobCard from '../components/JobCard';
 import SearchFilter from '../components/SearchFilter';
 import oceanBg from '../assets/images/ocean-careers-bg.jpg';
-import shipSilhouette from '../assets/images/silhouette.jpg';
 import { useNavigate } from 'react-router-dom';
 
 // Types
@@ -246,7 +245,7 @@ const JobsPage = () => {
 
       {/* Jobs Listing Section */}
       <motion.section
-        variants={staggerContainer}
+        variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
@@ -300,7 +299,7 @@ const JobsPage = () => {
         {/* Jobs Grid */}
         {!loading && (
           <motion.div
-            variants={staggerContainer}
+            variants={staggerContainer()}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.25 }}

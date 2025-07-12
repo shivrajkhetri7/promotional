@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 import '../assets/styles/service-card.css'
-import { nav } from 'framer-motion/client';
 import { useNavigate } from 'react-router-dom';
 
 interface ServiceCardProps {

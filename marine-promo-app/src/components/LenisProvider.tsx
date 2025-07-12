@@ -1,15 +1,18 @@
 import { useEffect } from 'react';
+import type { ReactNode } from 'react';
 import Lenis from 'lenis';
 
-export default function LenisProvider({ children }) {
+interface LenisProviderProps {
+  children: ReactNode;
+}
+
+export default function LenisProvider({ children }: LenisProviderProps) {
   useEffect(() => {
     const lenis = new Lenis({
       lerp: 0.1,
-      smooth: true,
-      direction: 'vertical',
     });
 
-    function raf(time) {
+    function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
@@ -21,5 +24,5 @@ export default function LenisProvider({ children }) {
     };
   }, []);
 
-  return children;
+  return <>{children}</>;
 }

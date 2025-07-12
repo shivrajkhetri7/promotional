@@ -8,7 +8,6 @@ import crew4 from '../assets/images/crew-4.jpg';
 import crew5 from '../assets/images/crew-5.jpg';
 import crew6 from '../assets/images/crew-6.jpg';
 import '../assets/styles/talent-pool.css';
-import { useNavigate } from 'react-router-dom';
 
 const crewPhotos = [
   { id: 1, src: crew1, alt: "Deck crew working together" },
@@ -43,7 +42,6 @@ const benefits = [
 ];
 
 export default function TalentPoolPage() {
-      const navigate = useNavigate();
   return (
     <motion.main
       initial={{ opacity: 0 }}
@@ -94,7 +92,7 @@ export default function TalentPoolPage() {
 
       {/* Benefits Section */}
       <motion.section
-        variants={staggerContainer}
+        variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
@@ -181,7 +179,7 @@ export default function TalentPoolPage() {
 
       {/* Registration Form Section */}
       <motion.section
-        variants={staggerContainer}
+        variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}

@@ -2,7 +2,6 @@ import '../assets/styles/jobHighlights.css';
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { staggerContainer, fadeIn, textVariant } from '../utils/motion';
-import lenis from 'lenis';
 import { FaShip, FaFilter, FaSearch, FaMapMarkerAlt, FaMoneyBillWave, FaCalendarAlt } from 'react-icons/fa';
 import Lenis from 'lenis';
 
@@ -161,7 +160,7 @@ export default function JobHighlights() {
 
   return (
     <motion.section
-      variants={staggerContainer}
+      variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}

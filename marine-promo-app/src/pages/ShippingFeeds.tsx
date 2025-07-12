@@ -103,7 +103,7 @@ export default function ShippingFeeds() {
 
             {/* Features Section */}
             <motion.section
-                variants={staggerContainer}
+                variants={staggerContainer()}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.25 }}
